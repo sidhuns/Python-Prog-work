@@ -1,0 +1,18 @@
+import math
+A = float(input('Angle A = '))
+#A = int(input('Angle A = '))
+B = float(input('Angle B = '))
+#B = int(input('Angle B = '))
+a = float(input('Side a = '))
+#a = int(input('Side a = '))
+b = a*math.sin(B*math.pi/180)/math.sin(A*math.pi/180)
+#b = a*math.sin(B)/math.sin(A)
+C = 180 - A - B
+c = a*math.sin(C*math.pi/180)/math.sin(A*math.pi/180)
+#c = a*math.sin(C)/math.sin(A)
+print('Angle C = {0}'.format(C))
+print('Side b = {0}'.format(b))
+print('Side c = {0}'.format(c))
+#print('Angle C = {C}')
+#print('Side b = {b}')
+#print('Side c = {c}')
